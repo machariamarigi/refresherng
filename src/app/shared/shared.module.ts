@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '../material/material.module';
-import { LayoutWrapperComponent } from './layout/layout-wrapper/layout-wrapper.component';
+import { ContentWrapperComponent } from './layout/content-wrapper/content-wrapper.component';
 
 @NgModule({
-  declarations: [LayoutWrapperComponent],
+  declarations: [ ContentWrapperComponent],
   imports: [CommonModule, FlexLayoutModule, MaterialModule],
-  exports: [MaterialModule, FlexLayoutModule, LayoutWrapperComponent]
+  exports: [MaterialModule, FlexLayoutModule, ContentWrapperComponent]
 })
 export class SharedModule {}
