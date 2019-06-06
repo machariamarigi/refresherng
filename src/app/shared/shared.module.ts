@@ -4,16 +4,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '../material/material.module';
 import { ContentWrapperComponent } from './layout/content-wrapper/content-wrapper.component';
-import { SidenavWrapperComponent } from './layout/sidenav-wrapper/sidenav-wrapper.component';
+import { HeaderComponent } from './layout/header/header.component';
 
 @NgModule({
-  declarations: [ContentWrapperComponent, SidenavWrapperComponent],
+  declarations: [ContentWrapperComponent, HeaderComponent ],
   imports: [CommonModule, FlexLayoutModule, MaterialModule],
   exports: [
     MaterialModule,
     FlexLayoutModule,
     ContentWrapperComponent,
-    SidenavWrapperComponent
+    HeaderComponent
   ]
 })
 export class SharedModule {}
